@@ -4,8 +4,9 @@
 
 import * as React from 'react'
 
-function UsernameForm({onSubmitUsername}) {
+function UsernameForm({ onSubmitUsername }) {
   const [username, setUsername] = React.useState('')
+
 
   function handleSubmit(event) {
     event.preventDefault()
@@ -35,7 +36,7 @@ function UsernameForm({onSubmitUsername}) {
 function App() {
   const onSubmitUsername = username => alert(`You entered: ${username}`)
   return (
-    <div style={{minWidth: 400}}>
+    <div style={{ minWidth: 400 }}>
       <UsernameForm onSubmitUsername={onSubmitUsername} />
     </div>
   )
